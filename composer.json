@@ -1,0 +1,16 @@
+{
+  "name": "rioslum/backend-hiring-test",
+  "description": "RioSlum Studio Backend Hiring Test",
+  "type": "project",
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "RioSlum\\HiringTest\\": "src/"
+    }
+  },
+  "scripts": {
+    "import": "php import.php"
+  }
+}
