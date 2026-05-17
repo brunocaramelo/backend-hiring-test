@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1779058430">
-  <project timestamp="1779058430" name="Clover Coverage">
+<coverage generated="1779059962">
+  <project timestamp="1779059962" name="Clover Coverage">
     <package name="BatchDataImporter\Contact\Dto">
       <file name="/srv/others/backend-hiring-test/src/Contact/Dto/ContactDto.php">
         <class name="BatchDataImporter\Contact\Dto\ContactDto" namespace="BatchDataImporter\Contact\Dto">
