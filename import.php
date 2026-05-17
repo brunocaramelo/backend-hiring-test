@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use RioSlum\HiringTest\ContactImporter;
-use RioSlum\HiringTest\MockCrmClient;
+use BatchDataImporter\ContactImporter;
+use BatchDataImporter\MockCrmClient;
 
-$inputPath = __DIR__ . '/data/contacts.json';
+$inputPath  = __DIR__ . '/data/contacts.json';
 $outputPath = __DIR__ . '/output/import-results.json';
 
-$client = new MockCrmClient();
-$importer = new ContactImporter($client);
+$client   = new MockCrmClient();
+$importer = new ContactImporter($client,3 , 3);
 
 $result = $importer->run($inputPath, $outputPath);
 

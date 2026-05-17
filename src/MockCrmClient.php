@@ -2,60 +2,38 @@
 
 declare(strict_types=1);
 
-namespace RioSlum\HiringTest;
+namespace BatchDataImporter;
 
-class MockCrmClient
+use BatchDataImporter\Contact\Dto\ContactDto;
+use BatchDataImporter\Crm\CrmClientInterface;
+use BatchDataImporter\Crm\CrmResponse;
+use BatchDataImporter\Crm\CrmResponseStatus;
+
+/**
+ * Simulates a third-party CRM with realistic failure modes.
+ *
+ * Weights (approximate):
+ *  60% success
+ *  15% temporary failure  → retryable
+ *  15% rate limit         → retryable + back-off
+ *  10% permanent failure  → do not retry
+ */
+final class MockCrmClient implements CrmClientInterface
 {
-    /**
-     * Simulates sending a contact to a third-party CRM.
-     *
-     * Return examples:
-     * - ['success' => true, 'status' => 200, 'id' => 'crm_123']
-     * - ['success' => false, 'status' => 429, 'error' => 'Rate limit exceeded', 'retry_after' => 1]
-     * - ['success' => false, 'status' => 500, 'error' => 'Temporary CRM error']
-     * - ['success' => false, 'status' => 400, 'error' => 'Invalid contact data']
-     */
-    public function sendContact(array $contact): array
+    private int $callCount = 0;
+
+    public function send(ContactDto $contact): CrmResponse
     {
-        $email = strtolower((string) ($contact['email'] ?? ''));
+        $this->callCount++;
 
-        if ($email === '') {
-            return [
-                'success' => false,
-                'status' => 400,
-                'error' => 'Missing email',
-            ];
-        }
+        // Deterministic enough for tests but varied enough to exercise all paths
+        $roll = ($this->callCount * 7 + crc32($contact->email)) % 100;
 
-        if (str_contains($email, 'rate.limit')) {
-            return [
-                'success' => false,
-                'status' => 429,
-                'error' => 'Rate limit exceeded',
-                'retry_after' => 1,
-            ];
-        }
-
-        if (str_contains($email, 'temporary.fail')) {
-            return [
-                'success' => false,
-                'status' => 500,
-                'error' => 'Temporary CRM error',
-            ];
-        }
-
-        if (str_contains($email, 'invalid.crm')) {
-            return [
-                'success' => false,
-                'status' => 400,
-                'error' => 'Invalid contact data',
-            ];
-        }
-
-        return [
-            'success' => true,
-            'status' => 200,
-            'id' => 'crm_' . substr(md5($email), 0, 10),
-        ];
+        return match (true) {
+            $roll < 60 => new CrmResponse(CrmResponseStatus::Success,          'Contact imported'),
+            $roll < 75 => new CrmResponse(CrmResponseStatus::TemporaryFailure, 'Service temporarily unavailable'),
+            $roll < 90 => new CrmResponse(CrmResponseStatus::RateLimit,        'Too many requests — slow down'),
+            default    => new CrmResponse(CrmResponseStatus::PermanentFailure,  'Contact already exists and cannot be updated'),
+        };
     }
 }

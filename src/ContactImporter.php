@@ -2,49 +2,51 @@
 
 declare(strict_types=1);
 
-namespace RioSlum\HiringTest;
+namespace BatchDataImporter;
 
-class ContactImporter
+use BatchDataImporter\Contact\Services\ContactFileConciliation;
+use BatchDataImporter\Crm\CrmClientInterface;
+use BatchDataImporter\Pipeline\BatchProcessor;
+use BatchDataImporter\Pipeline\RetryPolicy;
+use BatchDataImporter\Reader\JsonStreamReader;
+use BatchDataImporter\Report\ImportReport;
+
+
+final class ContactImporter
 {
+    private readonly BatchProcessor $processor;
+    private readonly ImportReport   $reporter;
+    private readonly JsonStreamReader $streamReader;
+
     public function __construct(
-        private MockCrmClient $client,
-        private int $batchSize = 3,
-        private int $maxRetries = 2
+        CrmClientInterface $crmClient,
+        int $batchSize,
+        int $maxAttempts,
     ) {
+        $retryPolicy       = new RetryPolicy($crmClient, $maxAttempts);
+        
+        $this->processor    = new BatchProcessor($retryPolicy, $batchSize);
+        $this->reporter     = new ImportReport();
+        $this->streamReader = new JsonStreamReader();
     }
 
     public function run(string $inputPath, string $outputPath): array
     {
-        // TODO: Implement the import workflow.
-        //
-        // Suggested steps:
-        // 1. Read contacts from $inputPath.
-        // 2. Validate and normalize emails.
-        // 3. Skip invalid contacts.
-        // 4. Merge duplicates by email.
-        // 5. Process contacts in batches.
-        // 6. Send each contact to MockCrmClient.
-        // 7. Retry temporary failures.
-        // 8. Handle rate limit responses.
-        // 9. Write a JSON report to $outputPath.
+        $conciliation = new ContactFileConciliation($this->streamReader, $inputPath);
+        
+        $normalized = $conciliation->handle();
 
-        $result = [
-            'summary' => [
-                'total_records' => 0,
-                'valid_records' => 0,
-                'invalid_records' => 0,
-                'duplicates_merged' => 0,
-                'attempted_imports' => 0,
-                'successful_imports' => 0,
-                'failed_imports' => 0,
-            ],
-            'imported' => [],
-            'failed' => [],
-            'skipped' => [],
-        ];
+        $results = $this->processor->process($normalized['contacts']);
 
-        file_put_contents($outputPath, json_encode($result, JSON_PRETTY_PRINT));
+        $report = $this->reporter->build(
+            normalizationStats: $normalized['stats'],
+            imported:           $results['imported'],
+            failed:             $results['failed'],
+            skipped:            $normalized['skipped'],
+        );
 
-        return $result;
+        $this->reporter->write($report, $outputPath);
+
+        return $report;
     }
 }
