@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1779036947">
-  <project timestamp="1779036947" name="Clover Coverage">
+<coverage generated="1779058430">
+  <project timestamp="1779058430" name="Clover Coverage">
     <package name="BatchDataImporter\Contact\Dto">
-      <file name="/srv/others/hiring-test/src/Contact/Dto/ContactDto.php">
+      <file name="/srv/others/backend-hiring-test/src/Contact/Dto/ContactDto.php">
         <class name="BatchDataImporter\Contact\Dto\ContactDto" namespace="BatchDataImporter\Contact\Dto">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
         </class>
@@ -22,7 +22,7 @@
       </file>
     </package>
     <package name="BatchDataImporter\Contact\Mappers">
-      <file name="/srv/others/hiring-test/src/Contact/Mappers/ContactMerger.php">
+      <file name="/srv/others/backend-hiring-test/src/Contact/Mappers/ContactMerger.php">
         <class name="BatchDataImporter\Contact\Mappers\ContactMerger" namespace="BatchDataImporter\Contact\Mappers">
           <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
         </class>
@@ -40,7 +40,7 @@
       </file>
     </package>
     <package name="BatchDataImporter\Contact\Services">
-      <file name="/srv/others/hiring-test/src/Contact/Services/ContactDuplicateRegistry.php">
+      <file name="/srv/others/backend-hiring-test/src/Contact/Services/ContactDuplicateRegistry.php">
         <class name="BatchDataImporter\Contact\Services\ContactDuplicateRegistry" namespace="BatchDataImporter\Contact\Services">
           <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="13" coveredelements="13"/>
         </class>
@@ -58,7 +58,7 @@
         <line num="38" type="stmt" count="4"/>
         <metrics loc="40" ncloc="40" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="13" coveredelements="13"/>
       </file>
-      <file name="/srv/others/hiring-test/src/Contact/Services/ContactFileConciliation.php">
+      <file name="/srv/others/backend-hiring-test/src/Contact/Services/ContactFileConciliation.php">
         <class name="BatchDataImporter\Contact\Services\ContactFileConciliation" namespace="BatchDataImporter\Contact\Services">
           <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="0" elements="27" coveredelements="0"/>
         </class>
@@ -91,7 +91,7 @@
         <line num="57" type="stmt" count="0"/>
         <metrics loc="59" ncloc="59" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="0" elements="27" coveredelements="0"/>
       </file>
-      <file name="/srv/others/hiring-test/src/Contact/Services/ImportStats.php">
+      <file name="/srv/others/backend-hiring-test/src/Contact/Services/ImportStats.php">
         <class name="BatchDataImporter\Contact\Services\ImportStats" namespace="BatchDataImporter\Contact\Services">
           <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="17" coveredelements="17"/>
         </class>
@@ -116,7 +116,7 @@
       </file>
     </package>
     <package name="BatchDataImporter\Contact\Validators">
-      <file name="/srv/others/hiring-test/src/Contact/Validators/ContactValidator.php">
+      <file name="/srv/others/backend-hiring-test/src/Contact/Validators/ContactValidator.php">
         <class name="BatchDataImporter\Contact\Validators\ContactValidator" namespace="BatchDataImporter\Contact\Validators">
           <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
         </class>
@@ -136,7 +136,7 @@
       </file>
     </package>
     <package name="BatchDataImporter">
-      <file name="/srv/others/hiring-test/src/ContactImporter.php">
+      <file name="/srv/others/backend-hiring-test/src/ContactImporter.php">
         <class name="BatchDataImporter\ContactImporter" namespace="BatchDataImporter">
           <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
         </class>
@@ -159,7 +159,7 @@
         <line num="50" type="stmt" count="0"/>
         <metrics loc="52" ncloc="52" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
       </file>
-      <file name="/srv/others/hiring-test/src/MockCrmClient.php">
+      <file name="/srv/others/backend-hiring-test/src/MockCrmClient.php">
         <class name="BatchDataImporter\MockCrmClient" namespace="BatchDataImporter">
           <metrics complexity="5" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
         </class>
@@ -173,11 +173,11 @@
         <metrics loc="40" ncloc="30" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="7" coveredelements="7"/>
       </file>
     </package>
-    <file name="/srv/others/hiring-test/src/Crm/CrmClientInterface.php">
+    <file name="/srv/others/backend-hiring-test/src/Crm/CrmClientInterface.php">
       <metrics loc="14" ncloc="14" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <package name="BatchDataImporter\Crm">
-      <file name="/srv/others/hiring-test/src/Crm/CrmResponse.php">
+      <file name="/srv/others/backend-hiring-test/src/Crm/CrmResponse.php">
         <class name="BatchDataImporter\Crm\CrmResponse" namespace="BatchDataImporter\Crm">
           <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
         </class>
@@ -194,7 +194,7 @@
         <line num="30" type="stmt" count="6"/>
         <metrics loc="33" ncloc="33" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
       </file>
-      <file name="/srv/others/hiring-test/src/Crm/CrmResponseStatus.php">
+      <file name="/srv/others/backend-hiring-test/src/Crm/CrmResponseStatus.php">
         <class name="BatchDataImporter\Crm\CrmResponseStatus" namespace="BatchDataImporter\Crm">
           <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
         </class>
@@ -202,7 +202,7 @@
       </file>
     </package>
     <package name="BatchDataImporter\Pipeline">
-      <file name="/srv/others/hiring-test/src/Pipeline/BatchProcessor.php">
+      <file name="/srv/others/backend-hiring-test/src/Pipeline/BatchProcessor.php">
         <class name="BatchDataImporter\Pipeline\BatchProcessor" namespace="BatchDataImporter\Pipeline">
           <metrics complexity="5" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
@@ -225,7 +225,7 @@
         <line num="48" type="stmt" count="8"/>
         <metrics loc="51" ncloc="44" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
       </file>
-      <file name="/srv/others/hiring-test/src/Pipeline/RetryPolicy.php">
+      <file name="/srv/others/backend-hiring-test/src/Pipeline/RetryPolicy.php">
         <class name="BatchDataImporter\Pipeline\RetryPolicy" namespace="BatchDataImporter\Pipeline">
           <metrics complexity="8" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="20" coveredelements="20"/>
         </class>
@@ -253,7 +253,7 @@
       </file>
     </package>
     <package name="BatchDataImporter\Reader">
-      <file name="/srv/others/hiring-test/src/Reader/JsonLineReader.php">
+      <file name="/srv/others/backend-hiring-test/src/Reader/JsonLineReader.php">
         <class name="BatchDataImporter\Reader\JsonLineReader" namespace="BatchDataImporter\Reader">
           <metrics complexity="5" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="13" coveredelements="11"/>
         </class>
@@ -272,7 +272,7 @@
         <line num="35" type="stmt" count="4"/>
         <metrics loc="38" ncloc="38" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="13" coveredelements="11"/>
       </file>
-      <file name="/srv/others/hiring-test/src/Reader/JsonStreamReader.php">
+      <file name="/srv/others/backend-hiring-test/src/Reader/JsonStreamReader.php">
         <class name="BatchDataImporter\Reader\JsonStreamReader" namespace="BatchDataImporter\Reader">
           <metrics complexity="21" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="42" coveredelements="0"/>
         </class>
@@ -322,7 +322,7 @@
       </file>
     </package>
     <package name="BatchDataImporter\Report">
-      <file name="/srv/others/hiring-test/src/Report/ImportReport.php">
+      <file name="/srv/others/backend-hiring-test/src/Report/ImportReport.php">
         <class name="BatchDataImporter\Report\ImportReport" namespace="BatchDataImporter\Report">
           <metrics complexity="13" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="36" elements="50" coveredelements="37"/>
         </class>
