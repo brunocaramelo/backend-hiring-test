@@ -38,7 +38,7 @@ The application is separated into the following containers
     
     1 - docker compose build;
 
-    2 - docker-compose run --rm composer install (install dependencies)
+    2 - docker-compose run --rm composer install
     
     3 - docker-compose run --rm app php import.php
     
