@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1779059962">
-  <project timestamp="1779059962" name="Clover Coverage">
+<coverage generated="1779063764">
+  <project timestamp="1779063764" name="Clover Coverage">
     <package name="BatchDataImporter\Contact\Dto">
       <file name="/srv/others/backend-hiring-test/src/Contact/Dto/ContactDto.php">
         <class name="BatchDataImporter\Contact\Dto\ContactDto" namespace="BatchDataImporter\Contact\Dto">
           <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
         </class>
-        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="49"/>
-        <line num="15" type="stmt" count="49"/>
-        <line num="16" type="stmt" count="49"/>
-        <line num="17" type="stmt" count="49"/>
-        <line num="18" type="stmt" count="49"/>
-        <line num="21" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="8"/>
-        <line num="23" type="stmt" count="8"/>
-        <line num="24" type="stmt" count="8"/>
-        <line num="25" type="stmt" count="8"/>
-        <line num="26" type="stmt" count="8"/>
-        <line num="27" type="stmt" count="8"/>
-        <line num="28" type="stmt" count="8"/>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="53"/>
+        <line num="15" type="stmt" count="53"/>
+        <line num="16" type="stmt" count="53"/>
+        <line num="17" type="stmt" count="53"/>
+        <line num="18" type="stmt" count="53"/>
+        <line num="21" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="23" type="stmt" count="9"/>
+        <line num="24" type="stmt" count="9"/>
+        <line num="25" type="stmt" count="9"/>
+        <line num="26" type="stmt" count="9"/>
+        <line num="27" type="stmt" count="9"/>
+        <line num="28" type="stmt" count="9"/>
         <metrics loc="31" ncloc="31" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="12" coveredelements="12"/>
       </file>
     </package>
@@ -26,16 +26,16 @@
         <class name="BatchDataImporter\Contact\Mappers\ContactMerger" namespace="BatchDataImporter\Contact\Mappers">
           <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
         </class>
-        <line num="11" type="method" name="merge" visibility="public" complexity="1" crap="1" count="12"/>
-        <line num="13" type="stmt" count="12"/>
-        <line num="14" type="stmt" count="12"/>
-        <line num="15" type="stmt" count="12"/>
-        <line num="16" type="stmt" count="12"/>
-        <line num="17" type="stmt" count="12"/>
-        <line num="18" type="stmt" count="12"/>
-        <line num="21" type="method" name="choicePrefer" visibility="private" complexity="2" crap="2" count="12"/>
-        <line num="23" type="stmt" count="12"/>
-        <line num="24" type="stmt" count="12"/>
+        <line num="11" type="method" name="merge" visibility="public" complexity="1" crap="1" count="13"/>
+        <line num="13" type="stmt" count="13"/>
+        <line num="14" type="stmt" count="13"/>
+        <line num="15" type="stmt" count="13"/>
+        <line num="16" type="stmt" count="13"/>
+        <line num="17" type="stmt" count="13"/>
+        <line num="18" type="stmt" count="13"/>
+        <line num="21" type="method" name="choicePrefer" visibility="private" complexity="2" crap="2" count="13"/>
+        <line num="23" type="stmt" count="13"/>
+        <line num="24" type="stmt" count="13"/>
         <metrics loc="26" ncloc="26" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="10" coveredelements="10"/>
       </file>
     </package>
@@ -44,74 +44,74 @@
         <class name="BatchDataImporter\Contact\Services\ContactDuplicateRegistry" namespace="BatchDataImporter\Contact\Services">
           <metrics complexity="5" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="13" coveredelements="13"/>
         </class>
-        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="6"/>
-        <line num="18" type="method" name="add" visibility="public" complexity="2" crap="2" count="6"/>
-        <line num="20" type="stmt" count="6"/>
-        <line num="22" type="stmt" count="6"/>
-        <line num="23" type="stmt" count="3"/>
-        <line num="24" type="stmt" count="3"/>
-        <line num="25" type="stmt" count="3"/>
-        <line num="28" type="stmt" count="6"/>
-        <line num="31" type="method" name="all" visibility="public" complexity="1" crap="1" count="6"/>
-        <line num="33" type="stmt" count="6"/>
-        <line num="36" type="method" name="getDuplicateCount" visibility="public" complexity="1" crap="1" count="4"/>
-        <line num="38" type="stmt" count="4"/>
+        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="18" type="method" name="add" visibility="public" complexity="2" crap="2" count="10"/>
+        <line num="20" type="stmt" count="10"/>
+        <line num="22" type="stmt" count="10"/>
+        <line num="23" type="stmt" count="4"/>
+        <line num="24" type="stmt" count="4"/>
+        <line num="25" type="stmt" count="4"/>
+        <line num="28" type="stmt" count="10"/>
+        <line num="31" type="method" name="all" visibility="public" complexity="1" crap="1" count="10"/>
+        <line num="33" type="stmt" count="10"/>
+        <line num="36" type="method" name="getDuplicateCount" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="38" type="stmt" count="8"/>
         <metrics loc="40" ncloc="40" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="9" elements="13" coveredelements="13"/>
       </file>
       <file name="/srv/others/backend-hiring-test/src/Contact/Services/ContactFileConciliation.php">
         <class name="BatchDataImporter\Contact\Services\ContactFileConciliation" namespace="BatchDataImporter\Contact\Services">
-          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="0" elements="27" coveredelements="0"/>
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="27" coveredelements="27"/>
         </class>
-        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="21" type="method" name="handle" visibility="public" complexity="3" crap="12" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
-        <line num="25" type="stmt" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="32" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="38" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="40" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="53" type="stmt" count="0"/>
-        <line num="54" type="stmt" count="0"/>
-        <line num="55" type="stmt" count="0"/>
-        <line num="56" type="stmt" count="0"/>
-        <line num="57" type="stmt" count="0"/>
-        <metrics loc="59" ncloc="59" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="0" elements="27" coveredelements="0"/>
+        <line num="16" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+        <line num="19" type="stmt" count="4"/>
+        <line num="21" type="method" name="handle" visibility="public" complexity="3" crap="3" count="4"/>
+        <line num="23" type="stmt" count="4"/>
+        <line num="24" type="stmt" count="4"/>
+        <line num="25" type="stmt" count="4"/>
+        <line num="26" type="stmt" count="4"/>
+        <line num="28" type="stmt" count="4"/>
+        <line num="30" type="stmt" count="4"/>
+        <line num="32" type="stmt" count="4"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="36" type="stmt" count="4"/>
+        <line num="37" type="stmt" count="4"/>
+        <line num="38" type="stmt" count="4"/>
+        <line num="39" type="stmt" count="4"/>
+        <line num="40" type="stmt" count="4"/>
+        <line num="41" type="stmt" count="4"/>
+        <line num="43" type="stmt" count="4"/>
+        <line num="45" type="stmt" count="4"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="47" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="4"/>
+        <line num="53" type="stmt" count="4"/>
+        <line num="54" type="stmt" count="4"/>
+        <line num="55" type="stmt" count="4"/>
+        <line num="56" type="stmt" count="4"/>
+        <line num="57" type="stmt" count="4"/>
+        <metrics loc="59" ncloc="59" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="25" coveredstatements="25" elements="27" coveredelements="27"/>
       </file>
       <file name="/srv/others/backend-hiring-test/src/Contact/Services/ImportStats.php">
         <class name="BatchDataImporter\Contact\Services\ImportStats" namespace="BatchDataImporter\Contact\Services">
           <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="17" coveredelements="17"/>
         </class>
-        <line num="12" type="method" name="incrementTotal" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="14" type="stmt" count="2"/>
-        <line num="17" type="method" name="addSkipped" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="19" type="stmt" count="2"/>
-        <line num="20" type="stmt" count="2"/>
-        <line num="21" type="stmt" count="2"/>
-        <line num="22" type="stmt" count="2"/>
-        <line num="25" type="method" name="compile" visibility="public" complexity="1" crap="1" count="7"/>
-        <line num="27" type="stmt" count="7"/>
-        <line num="28" type="stmt" count="7"/>
-        <line num="29" type="stmt" count="7"/>
-        <line num="30" type="stmt" count="7"/>
-        <line num="31" type="stmt" count="7"/>
-        <line num="32" type="stmt" count="7"/>
-        <line num="33" type="stmt" count="7"/>
-        <line num="34" type="stmt" count="7"/>
-        <line num="35" type="stmt" count="7"/>
+        <line num="12" type="method" name="incrementTotal" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="14" type="stmt" count="6"/>
+        <line num="17" type="method" name="addSkipped" visibility="public" complexity="1" crap="1" count="3"/>
+        <line num="19" type="stmt" count="3"/>
+        <line num="20" type="stmt" count="3"/>
+        <line num="21" type="stmt" count="3"/>
+        <line num="22" type="stmt" count="3"/>
+        <line num="25" type="method" name="compile" visibility="public" complexity="1" crap="1" count="11"/>
+        <line num="27" type="stmt" count="11"/>
+        <line num="28" type="stmt" count="11"/>
+        <line num="29" type="stmt" count="11"/>
+        <line num="30" type="stmt" count="11"/>
+        <line num="31" type="stmt" count="11"/>
+        <line num="32" type="stmt" count="11"/>
+        <line num="33" type="stmt" count="11"/>
+        <line num="34" type="stmt" count="11"/>
+        <line num="35" type="stmt" count="11"/>
         <metrics loc="37" ncloc="37" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="17" coveredelements="17"/>
       </file>
     </package>
@@ -120,44 +120,44 @@
         <class name="BatchDataImporter\Contact\Validators\ContactValidator" namespace="BatchDataImporter\Contact\Validators">
           <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
         </class>
-        <line num="13" type="method" name="validate" visibility="public" complexity="1" crap="1" count="13"/>
-        <line num="15" type="stmt" count="13"/>
-        <line num="18" type="method" name="isValid" visibility="public" complexity="1" crap="1" count="8"/>
-        <line num="20" type="stmt" count="8"/>
-        <line num="23" type="method" name="setErrors" visibility="public" complexity="3" crap="3" count="13"/>
-        <line num="25" type="stmt" count="13"/>
-        <line num="27" type="stmt" count="13"/>
-        <line num="28" type="stmt" count="3"/>
-        <line num="31" type="stmt" count="10"/>
+        <line num="13" type="method" name="validate" visibility="public" complexity="1" crap="1" count="17"/>
+        <line num="15" type="stmt" count="17"/>
+        <line num="18" type="method" name="isValid" visibility="public" complexity="1" crap="1" count="12"/>
+        <line num="20" type="stmt" count="12"/>
+        <line num="23" type="method" name="setErrors" visibility="public" complexity="3" crap="3" count="17"/>
+        <line num="25" type="stmt" count="17"/>
+        <line num="27" type="stmt" count="17"/>
+        <line num="28" type="stmt" count="4"/>
+        <line num="31" type="stmt" count="14"/>
         <line num="32" type="stmt" count="8"/>
-        <line num="36" type="method" name="getErrors" visibility="public" complexity="1" crap="1" count="5"/>
-        <line num="38" type="stmt" count="5"/>
+        <line num="36" type="method" name="getErrors" visibility="public" complexity="1" crap="1" count="6"/>
+        <line num="38" type="stmt" count="6"/>
         <metrics loc="41" ncloc="41" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="12" coveredelements="12"/>
       </file>
     </package>
     <package name="BatchDataImporter">
       <file name="/srv/others/backend-hiring-test/src/ContactImporter.php">
         <class name="BatchDataImporter\ContactImporter" namespace="BatchDataImporter">
-          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
+          <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
-        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="26" type="stmt" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="33" type="method" name="run" visibility="public" complexity="1" crap="2" count="0"/>
-        <line num="35" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="39" type="stmt" count="0"/>
-        <line num="41" type="stmt" count="0"/>
-        <line num="42" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="44" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="0"/>
-        <line num="48" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <metrics loc="52" ncloc="52" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="28" type="stmt" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="method" name="run" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="41" type="stmt" count="1"/>
+        <line num="42" type="stmt" count="1"/>
+        <line num="43" type="stmt" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="45" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="48" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <metrics loc="52" ncloc="52" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
       </file>
       <file name="/srv/others/backend-hiring-test/src/MockCrmClient.php">
         <class name="BatchDataImporter\MockCrmClient" namespace="BatchDataImporter">
@@ -181,10 +181,10 @@
         <class name="BatchDataImporter\Crm\CrmResponse" namespace="BatchDataImporter\Crm">
           <metrics complexity="6" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="11" coveredelements="11"/>
         </class>
-        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="31"/>
-        <line num="12" type="stmt" count="31"/>
-        <line num="14" type="method" name="isSuccess" visibility="public" complexity="1" crap="1" count="18"/>
-        <line num="16" type="stmt" count="18"/>
+        <line num="9" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="32"/>
+        <line num="12" type="stmt" count="32"/>
+        <line num="14" type="method" name="isSuccess" visibility="public" complexity="1" crap="1" count="19"/>
+        <line num="16" type="stmt" count="19"/>
         <line num="19" type="method" name="isRetryable" visibility="public" complexity="3" crap="3" count="13"/>
         <line num="21" type="stmt" count="13"/>
         <line num="22" type="stmt" count="13"/>
@@ -206,44 +206,44 @@
         <class name="BatchDataImporter\Pipeline\BatchProcessor" namespace="BatchDataImporter\Pipeline">
           <metrics complexity="5" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
         </class>
-        <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="8"/>
-        <line num="22" type="stmt" count="8"/>
-        <line num="24" type="method" name="process" visibility="public" complexity="4" crap="4" count="8"/>
-        <line num="26" type="stmt" count="8"/>
-        <line num="27" type="stmt" count="8"/>
-        <line num="29" type="stmt" count="8"/>
-        <line num="30" type="stmt" count="7"/>
-        <line num="31" type="stmt" count="7"/>
-        <line num="33" type="stmt" count="7"/>
-        <line num="35" type="stmt" count="7"/>
-        <line num="36" type="stmt" count="5"/>
-        <line num="37" type="stmt" count="5"/>
+        <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="22" type="stmt" count="9"/>
+        <line num="24" type="method" name="process" visibility="public" complexity="4" crap="4" count="9"/>
+        <line num="26" type="stmt" count="9"/>
+        <line num="27" type="stmt" count="9"/>
+        <line num="29" type="stmt" count="9"/>
+        <line num="30" type="stmt" count="8"/>
+        <line num="31" type="stmt" count="8"/>
+        <line num="33" type="stmt" count="8"/>
+        <line num="35" type="stmt" count="8"/>
+        <line num="36" type="stmt" count="6"/>
+        <line num="37" type="stmt" count="6"/>
         <line num="40" type="stmt" count="3"/>
         <line num="41" type="stmt" count="3"/>
         <line num="42" type="stmt" count="3"/>
         <line num="43" type="stmt" count="3"/>
-        <line num="48" type="stmt" count="8"/>
+        <line num="48" type="stmt" count="9"/>
         <metrics loc="51" ncloc="44" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="17" coveredelements="17"/>
       </file>
       <file name="/srv/others/backend-hiring-test/src/Pipeline/RetryPolicy.php">
         <class name="BatchDataImporter\Pipeline\RetryPolicy" namespace="BatchDataImporter\Pipeline">
           <metrics complexity="8" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="20" coveredelements="20"/>
         </class>
-        <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
-        <line num="30" type="stmt" count="15"/>
-        <line num="32" type="method" name="send" visibility="public" complexity="5" crap="5" count="14"/>
-        <line num="34" type="stmt" count="14"/>
-        <line num="35" type="stmt" count="14"/>
-        <line num="37" type="stmt" count="14"/>
-        <line num="38" type="stmt" count="14"/>
-        <line num="39" type="stmt" count="14"/>
-        <line num="41" type="stmt" count="14"/>
-        <line num="42" type="stmt" count="8"/>
+        <line num="27" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="16"/>
+        <line num="30" type="stmt" count="16"/>
+        <line num="32" type="method" name="send" visibility="public" complexity="5" crap="5" count="15"/>
+        <line num="34" type="stmt" count="15"/>
+        <line num="35" type="stmt" count="15"/>
+        <line num="37" type="stmt" count="15"/>
+        <line num="38" type="stmt" count="15"/>
+        <line num="39" type="stmt" count="15"/>
+        <line num="41" type="stmt" count="15"/>
+        <line num="42" type="stmt" count="9"/>
         <line num="45" type="stmt" count="9"/>
         <line num="46" type="stmt" count="4"/>
         <line num="49" type="stmt" count="5"/>
         <line num="50" type="stmt" count="4"/>
-        <line num="54" type="stmt" count="14"/>
+        <line num="54" type="stmt" count="15"/>
         <line num="57" type="method" name="backOff" visibility="private" complexity="2" crap="2" count="4"/>
         <line num="59" type="stmt" count="4"/>
         <line num="60" type="stmt" count="4"/>
@@ -274,111 +274,111 @@
       </file>
       <file name="/srv/others/backend-hiring-test/src/Reader/JsonStreamReader.php">
         <class name="BatchDataImporter\Reader\JsonStreamReader" namespace="BatchDataImporter\Reader">
-          <metrics complexity="21" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="42" coveredelements="0"/>
+          <metrics complexity="21" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="34" elements="42" coveredelements="39"/>
         </class>
-        <line num="17" type="method" name="read" visibility="public" complexity="5" crap="30" count="0"/>
-        <line num="19" type="stmt" count="0"/>
-        <line num="20" type="stmt" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <line num="24" type="stmt" count="0"/>
+        <line num="17" type="method" name="read" visibility="public" complexity="5" crap="5.15" count="5"/>
+        <line num="19" type="stmt" count="5"/>
+        <line num="20" type="stmt" count="1"/>
+        <line num="23" type="stmt" count="4"/>
+        <line num="24" type="stmt" count="4"/>
         <line num="25" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="30" type="stmt" count="0"/>
-        <line num="31" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="4"/>
+        <line num="30" type="stmt" count="4"/>
+        <line num="31" type="stmt" count="4"/>
         <line num="32" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="37" type="stmt" count="0"/>
-        <line num="41" type="method" name="parseChunk" visibility="private" complexity="3" crap="12" count="0"/>
-        <line num="43" type="stmt" count="0"/>
-        <line num="44" type="stmt" count="0"/>
-        <line num="45" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
-        <line num="49" type="stmt" count="0"/>
-        <line num="50" type="stmt" count="0"/>
-        <line num="52" type="stmt" count="0"/>
-        <line num="57" type="method" name="updateStringState" visibility="private" complexity="5" crap="30" count="0"/>
-        <line num="59" type="stmt" count="0"/>
-        <line num="60" type="stmt" count="0"/>
-        <line num="63" type="stmt" count="0"/>
-        <line num="64" type="stmt" count="0"/>
-        <line num="66" type="stmt" count="0"/>
-        <line num="70" type="method" name="handleStructuralChar" visibility="private" complexity="4" crap="20" count="0"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="76" type="stmt" count="0"/>
-        <line num="78" type="stmt" count="0"/>
-        <line num="79" type="stmt" count="0"/>
-        <line num="80" type="stmt" count="0"/>
-        <line num="81" type="stmt" count="0"/>
-        <line num="86" type="method" name="appendToBuffer" visibility="private" complexity="2" crap="6" count="0"/>
-        <line num="88" type="stmt" count="0"/>
-        <line num="89" type="stmt" count="0"/>
-        <line num="93" type="method" name="flushBuffer" visibility="private" complexity="2" crap="6" count="0"/>
-        <line num="95" type="stmt" count="0"/>
-        <line num="96" type="stmt" count="0"/>
-        <line num="98" type="stmt" count="0"/>
-        <line num="99" type="stmt" count="0"/>
-        <metrics loc="102" ncloc="102" classes="1" methods="6" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="42" coveredelements="0"/>
+        <line num="34" type="stmt" count="4"/>
+        <line num="37" type="stmt" count="4"/>
+        <line num="41" type="method" name="parseChunk" visibility="private" complexity="3" crap="3" count="4"/>
+        <line num="43" type="stmt" count="4"/>
+        <line num="44" type="stmt" count="4"/>
+        <line num="45" type="stmt" count="4"/>
+        <line num="47" type="stmt" count="4"/>
+        <line num="49" type="stmt" count="4"/>
+        <line num="50" type="stmt" count="4"/>
+        <line num="52" type="stmt" count="4"/>
+        <line num="57" type="method" name="updateStringState" visibility="private" complexity="5" crap="5" count="4"/>
+        <line num="59" type="stmt" count="4"/>
+        <line num="60" type="stmt" count="4"/>
+        <line num="63" type="stmt" count="4"/>
+        <line num="64" type="stmt" count="1"/>
+        <line num="66" type="stmt" count="4"/>
+        <line num="70" type="method" name="handleStructuralChar" visibility="private" complexity="4" crap="4" count="4"/>
+        <line num="72" type="stmt" count="4"/>
+        <line num="73" type="stmt" count="4"/>
+        <line num="76" type="stmt" count="4"/>
+        <line num="78" type="stmt" count="4"/>
+        <line num="79" type="stmt" count="4"/>
+        <line num="80" type="stmt" count="4"/>
+        <line num="81" type="stmt" count="4"/>
+        <line num="86" type="method" name="appendToBuffer" visibility="private" complexity="2" crap="2" count="4"/>
+        <line num="88" type="stmt" count="4"/>
+        <line num="89" type="stmt" count="4"/>
+        <line num="93" type="method" name="flushBuffer" visibility="private" complexity="2" crap="2" count="4"/>
+        <line num="95" type="stmt" count="4"/>
+        <line num="96" type="stmt" count="4"/>
+        <line num="98" type="stmt" count="4"/>
+        <line num="99" type="stmt" count="4"/>
+        <metrics loc="102" ncloc="102" classes="1" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="34" elements="42" coveredelements="39"/>
       </file>
     </package>
     <package name="BatchDataImporter\Report">
       <file name="/srv/others/backend-hiring-test/src/Report/ImportReport.php">
         <class name="BatchDataImporter\Report\ImportReport" namespace="BatchDataImporter\Report">
-          <metrics complexity="13" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="36" elements="50" coveredelements="37"/>
+          <metrics complexity="13" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="40" elements="50" coveredelements="42"/>
         </class>
-        <line num="11" type="method" name="build" visibility="public" complexity="1" crap="1" count="7"/>
-        <line num="17" type="stmt" count="7"/>
-        <line num="18" type="stmt" count="7"/>
-        <line num="19" type="stmt" count="7"/>
-        <line num="21" type="stmt" count="7"/>
-        <line num="22" type="stmt" count="7"/>
-        <line num="23" type="stmt" count="7"/>
-        <line num="24" type="stmt" count="7"/>
-        <line num="25" type="stmt" count="7"/>
-        <line num="26" type="stmt" count="7"/>
-        <line num="27" type="stmt" count="7"/>
-        <line num="28" type="stmt" count="7"/>
-        <line num="29" type="stmt" count="7"/>
-        <line num="30" type="stmt" count="7"/>
-        <line num="31" type="stmt" count="7"/>
-        <line num="32" type="stmt" count="7"/>
-        <line num="33" type="stmt" count="7"/>
-        <line num="34" type="stmt" count="7"/>
-        <line num="35" type="stmt" count="7"/>
-        <line num="38" type="method" name="write" visibility="public" complexity="4" crap="4.05" count="3"/>
-        <line num="40" type="stmt" count="3"/>
-        <line num="42" type="stmt" count="3"/>
+        <line num="11" type="method" name="build" visibility="public" complexity="1" crap="1" count="8"/>
+        <line num="17" type="stmt" count="8"/>
+        <line num="18" type="stmt" count="8"/>
+        <line num="19" type="stmt" count="8"/>
+        <line num="21" type="stmt" count="8"/>
+        <line num="22" type="stmt" count="8"/>
+        <line num="23" type="stmt" count="8"/>
+        <line num="24" type="stmt" count="8"/>
+        <line num="25" type="stmt" count="8"/>
+        <line num="26" type="stmt" count="8"/>
+        <line num="27" type="stmt" count="8"/>
+        <line num="28" type="stmt" count="8"/>
+        <line num="29" type="stmt" count="8"/>
+        <line num="30" type="stmt" count="8"/>
+        <line num="31" type="stmt" count="8"/>
+        <line num="32" type="stmt" count="8"/>
+        <line num="33" type="stmt" count="8"/>
+        <line num="34" type="stmt" count="8"/>
+        <line num="35" type="stmt" count="8"/>
+        <line num="38" type="method" name="write" visibility="public" complexity="4" crap="4.05" count="4"/>
+        <line num="40" type="stmt" count="4"/>
+        <line num="42" type="stmt" count="4"/>
         <line num="43" type="stmt" count="0"/>
-        <line num="46" type="stmt" count="3"/>
-        <line num="47" type="stmt" count="3"/>
+        <line num="46" type="stmt" count="4"/>
+        <line num="47" type="stmt" count="4"/>
         <line num="48" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="3"/>
-        <line num="53" type="stmt" count="3"/>
-        <line num="55" type="stmt" count="3"/>
-        <line num="56" type="stmt" count="3"/>
-        <line num="57" type="stmt" count="3"/>
-        <line num="59" type="stmt" count="3"/>
-        <line num="61" type="stmt" count="3"/>
-        <line num="63" type="stmt" count="3"/>
-        <line num="66" type="method" name="writeJsonSection" visibility="private" complexity="4" crap="6.00" count="3"/>
-        <line num="68" type="stmt" count="3"/>
-        <line num="70" type="stmt" count="3"/>
-        <line num="71" type="stmt" count="3"/>
-        <line num="72" type="stmt" count="0"/>
-        <line num="73" type="stmt" count="0"/>
-        <line num="75" type="stmt" count="0"/>
-        <line num="76" type="stmt" count="0"/>
-        <line num="79" type="stmt" count="3"/>
-        <line num="82" type="method" name="countIterable" visibility="private" complexity="4" crap="8.74" count="7"/>
-        <line num="84" type="stmt" count="7"/>
-        <line num="85" type="stmt" count="7"/>
+        <line num="51" type="stmt" count="4"/>
+        <line num="53" type="stmt" count="4"/>
+        <line num="55" type="stmt" count="4"/>
+        <line num="56" type="stmt" count="4"/>
+        <line num="57" type="stmt" count="4"/>
+        <line num="59" type="stmt" count="4"/>
+        <line num="61" type="stmt" count="4"/>
+        <line num="63" type="stmt" count="4"/>
+        <line num="66" type="method" name="writeJsonSection" visibility="private" complexity="4" crap="4" count="4"/>
+        <line num="68" type="stmt" count="4"/>
+        <line num="70" type="stmt" count="4"/>
+        <line num="71" type="stmt" count="4"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="75" type="stmt" count="1"/>
+        <line num="76" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="4"/>
+        <line num="82" type="method" name="countIterable" visibility="private" complexity="4" crap="8.74" count="8"/>
+        <line num="84" type="stmt" count="8"/>
+        <line num="85" type="stmt" count="8"/>
         <line num="88" type="stmt" count="0"/>
         <line num="90" type="stmt" count="0"/>
         <line num="91" type="stmt" count="0"/>
         <line num="94" type="stmt" count="0"/>
-        <metrics loc="96" ncloc="96" classes="1" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="36" elements="50" coveredelements="37"/>
+        <metrics loc="96" ncloc="96" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="40" elements="50" coveredelements="42"/>
       </file>
     </package>
-    <metrics files="16" loc="739" ncloc="713" classes="14" methods="40" coveredmethods="26" conditionals="0" coveredconditionals="0" statements="228" coveredstatements="141" elements="268" coveredelements="167"/>
+    <metrics files="16" loc="739" ncloc="713" classes="14" methods="40" coveredmethods="36" conditionals="0" coveredconditionals="0" statements="228" coveredstatements="219" elements="268" coveredelements="255"/>
   </project>
 </coverage>
