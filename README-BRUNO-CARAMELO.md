@@ -38,11 +38,11 @@ The application is separated into the following containers
     
     1 - docker compose build;
 
-    2 - docker-compose run --rm composer install
+    2 - docker compose run --rm composer install
     
-    3 - docker-compose run --rm app php import.php
+    3 - docker compose run --rm app php import.php
     
-    4 - docker-compose run --rm app vendor/bin/phpunit
+    4 - docker compose run --rm app vendor/bin/phpunit
     
    
 ## Post Run
