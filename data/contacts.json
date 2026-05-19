@@ -1,12 +1,72 @@
 [
-  { "name": "Alice Smith", "email": "Alice.Smith@example.com", "phone": "555-1001", "company": "Acme Corp" },
-  { "name": "alice smith", "email": "ALICE.SMITH@EXAMPLE.COM", "phone": "", "company": "Acme Corp" },
-  { "name": "Bob Jones", "email": "bob.jones@example.com", "phone": "555-1002", "company": "" },
-  { "name": "Bob Jones", "email": "bob.jones@example.com", "phone": "555-1002", "company": "Globex" },
-  { "name": "Carol White", "email": "", "phone": "555-1003", "company": "Initech" },
-  { "name": "Dave Brown", "email": "not-an-email", "phone": "555-1004", "company": "Umbrella" },
-  { "name": "Eve Davis", "email": "eve.davis@example.com", "phone": "555-1005", "company": "Cyberdyne" },
-  { "name": "Frank Miller", "email": "frank.miller@example.com", "phone": "555-1006", "company": "Weyland" },
-  { "name": "Grace Lee", "email": "grace.lee@example.com", "phone": "555-1007", "company": "Tyrell" },
-  { "name": "Hank Wilson", "email": "hank.wilson@example.com", "phone": "555-1008", "company": "Oscorp" }
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "John.Doe@Example.com",
+    "phone": "555-1000",
+    "state": "AZ"
+  },
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "555-1000",
+    "state": "Arizona"
+  },
+  {
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "JANE.SMITH@example.com",
+    "phone": "",
+    "state": "FL"
+  },
+  {
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane.smith@example.com",
+    "phone": "555-2000",
+    "state": "FL"
+  },
+  {
+    "first_name": "Missing",
+    "last_name": "Email",
+    "email": "",
+    "phone": "555-3000",
+    "state": "TX"
+  },
+  {
+    "first_name": "Bad",
+    "last_name": "Email",
+    "email": "not-an-email",
+    "phone": "555-4000",
+    "state": "NV"
+  },
+  {
+    "first_name": "Rate",
+    "last_name": "Limit",
+    "email": "rate.limit@example.com",
+    "phone": "555-5000",
+    "state": "CA"
+  },
+  {
+    "first_name": "Temporary",
+    "last_name": "Fail",
+    "email": "temporary.fail@example.com",
+    "phone": "555-6000",
+    "state": "GA"
+  },
+  {
+    "first_name": "Invalid",
+    "last_name": "CRM",
+    "email": "invalid.crm@example.com",
+    "phone": "555-7000",
+    "state": "OH"
+  },
+  {
+    "first_name": "Maria",
+    "last_name": "Garcia",
+    "email": "Maria.Garcia@Example.com",
+    "phone": "555-8000",
+    "state": "PA"
+  }
 ]
