@@ -7,13 +7,6 @@ namespace BatchDataImporter\Pipeline;
 use BatchDataImporter\Contact\Contact;
 use BatchDataImporter\Crm\CrmResponseStatus;
 
-/**
- * Sends contacts in batches via the retry-aware policy.
- *
- * Batching here is conceptual (simulating pagination / bulk API patterns).
- * Each contact is still sent individually because MockCrmClient has a
- * per-contact interface — in a real integration this would be a bulk endpoint.
- */
 final class BatchProcessor
 {
     public function __construct(

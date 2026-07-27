@@ -9,15 +9,6 @@ use BatchDataImporter\Crm\CrmClientInterface;
 use BatchDataImporter\Crm\CrmResponse;
 use BatchDataImporter\Crm\CrmResponseStatus;
 
-/**
- * Wraps a CRM client with exponential back-off retry logic.
- *
- * Design decisions:
- * - Permanent failures are not retried (no point burning rate-limit budget).
- * - Rate-limit responses use a longer base delay to respect the upstream.
- * - Jitter avoids thundering-herd on batch retries.
- * - Max attempts is configurable so tests can set it to 1.
- */
 final class RetryPolicy
 {
     private const BASE_DELAY_MS      = 100;

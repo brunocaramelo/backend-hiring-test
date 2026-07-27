@@ -9,15 +9,7 @@ use BatchDataImporter\Crm\CrmClientInterface;
 use BatchDataImporter\Crm\CrmResponse;
 use BatchDataImporter\Crm\CrmResponseStatus;
 
-/**
- * Simulates a third-party CRM with realistic failure modes.
- *
- * Weights (approximate):
- *  60% success
- *  15% temporary failure  → retryable
- *  15% rate limit         → retryable + back-off
- *  10% permanent failure  → do not retry
- */
+
 final class MockCrmClient implements CrmClientInterface
 {
     private int $callCount = 0;
